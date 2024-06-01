@@ -6,15 +6,18 @@ hamburger.addEventListener('click', function(){
     hamburger.classList.toggle("open");
 });
 
-var dessertCards = document.querySelector('.dessert-cards-card');
+var dessertNames = document.querySelector('.dessert-cards-card-image');
+var dessertShortDescriptions = document.querySelector('.dessert-cards-card-image');
+var dessertLongDescriptions = document.querySelector('.dessert-cards-card-image');
+var dessertNames = document.querySelector('.dessert-cards-card-image');
 
 async function fetchData() {
     const response = await fetch("http://localhost:4000/desserts");
     const desserts = await response.json();
-    console.log(desserts);
 }
 
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
+fetchData();
+
+for (let index = 0; index < dessertNames.length; index++) {
+    dessertNames[index].innerHTML = desserts[0].name;
 }
