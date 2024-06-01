@@ -1,1 +1,17 @@
 // Продължи с твоя SCSS или обикновен CSS код тук.
+@use 'abstracts';
+@use 'base';
+@use 'components';
+@use 'layout';
+
+body {
+    background: var(--color-background);
+
+    .container {
+        --max-width: 1280px;
+        --padding: 16px;
+    
+        width: min(var(--max-width), 100% - 2*var(--padding));
+        margin-inline: auto;
+    }
+}

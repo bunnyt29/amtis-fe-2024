@@ -93,10 +93,472 @@
     </head>
 
     <body>
-        <div id="app">
-            Започни работа тук. Успех! :)
-        </div>
-
+        <header>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <picture>
+                        <source media="(max-width:1100px)" srcset="public/images/mobile/logo.svg">
+                        <img src="public/images/desktop/logo.svg" alt="logo">
+                    </picture>
+                    <a href="#" id="btn-hamburger" class="hamburger-menu open">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <nav id="nav-links" class="nav-links" class="hidden">
+                        <a href="#">Нашите десерти</a>
+                        <a href="#">Отзиви</a>
+                        <a href="#">За поръчки и запитвания</a>
+                        <a href="#">Препоръки</a>
+                        <a href="#">Медиите за нас</a>
+                        <a href="#">Контакти</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="hero container">
+            <img class="hero-decoration-strawberry" src="public/images/shared/hero-decoration-strawberry.svg" alt="strawberry">
+            <img class="hero-decoration-basil" src="public/images/shared/hero-decoration-basil.svg" alt="basil">
+            <div class="hero-wrapper">
+                <h1>Десерти Kristallino – където <span class="hero-heading-decoration">изкуството</span> среща <span class="hero-heading-decoration">десерта</span>.</h1>
+                <p>Отдайте се на нашите изящни творения, изработени със страст и прецизност от световноизвестния сладкар Кристалин Илиев. Разгледайте нашите иновативни десерти, които обещават да измамят вкусовите ви рецептори и да запалят сетивата ви.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Направи заявка</button>
+                    <button class="btn btn-secondary">Научи повече</button>
+                </div>
+            </div>
+        </section>
+        <section class="dessert-cards-section container">
+            <img class="dessert-cards-section-decoration" src="public/images/desktop/dessert-cards-decoration.svg" alt="decoration">
+            <div class="dessert-cards">
+                <div class="dessert-cards-card">
+                    <picture class="dessert-cards-card-image">
+                        <source media="(max-width:600px)" srcset="public/images/desktop/strawberry-and-basil.svg">
+                        <img class="dessert-cards-card-image" src="public/images/desktop/strawberry-and-basil.svg" alt="strawberry and basil">
+                    </picture>
+                    <div class="dessert-cards-card-text">
+                        <picture>
+                            <source media="(max-width:600px)" srcset="public/images/desktop/sections-decoration.svg">
+                            <img src="public/images/desktop/sections-decoration.svg" alt="dessert-card-decoration">
+                        </picture>
+                        <h2 class="dessert-cards-card-name">Ягоди и босилек</h2>
+                        <p class="dessert-cards-card-description-short">Отпразнувайте същността на лятото със зрели ягоди, съчетани с ароматен босилек, освежаващо удоволствие за небцето.</p>
+                        <button>Научете повече</button>
+                    </div>
+                </div>
+                <div class="dessert-cards-card">
+                    <picture class="dessert-cards-card-image">
+                        <source media="(max-width:600px)" srcset="public/images/desktop/strawberry-and-basil.svg">
+                        <img src="public/images/desktop/strawberry-and-basil.svg" alt="strawberry and basil">
+                    </picture>
+                    <div class="dessert-cards-card-text">
+                        <picture>
+                            <source media="(max-width:600px)" srcset="public/images/desktop/sections-decoration.svg">
+                            <img src="public/images/desktop/sections-decoration.svg" alt="dessert-card-decoration">
+                        </picture>
+                        <h2>Ягоди и босилек </h2>
+                        <p>Отпразнувайте същността на лятото със зрели ягоди, съчетани с ароматен босилек, освежаващо удоволствие за небцето.</p>
+                        <button>Научете повече</button>
+                    </div>
+                </div>
+                <div class="dessert-cards-card">
+                    <picture class="dessert-cards-card-image">
+                        <source media="(max-width:600px)" srcset="public/images/desktop/strawberry-and-basil.svg">
+                        <img src="public/images/desktop/strawberry-and-basil.svg" alt="strawberry and basil">
+                    </picture>
+                    <div class="dessert-cards-card-text">
+                        <picture>
+                            <source media="(max-width:600px)" srcset="public/images/desktop/sections-decoration.svg">
+                            <img src="public/images/desktop/sections-decoration.svg" alt="dessert-card-decoration">
+                        </picture>
+                        <h2>Ягоди и босилек </h2>
+                        <p>Отпразнувайте същността на лятото със зрели ягоди, съчетани с ароматен босилек, освежаващо удоволствие за небцето.</p>
+                        <button>Научете повече</button>
+                    </div>
+                </div>
+                <div class="dessert-cards-card">
+                    <picture class="dessert-cards-card-image">
+                        <source media="(max-width:600px)" srcset="public/images/desktop/strawberry-and-basil.svg">
+                        <img src="public/images/desktop/strawberry-and-basil.svg" alt="strawberry and basil">
+                    </picture>
+                    <div class="dessert-cards-card-text">
+                        <picture>
+                            <source media="(max-width:600px)" srcset="public/images/desktop/sections-decoration.svg">
+                            <img src="public/images/desktop/sections-decoration.svg" alt="dessert-card-decoration">
+                        </picture>
+                        <h2>Ягоди и босилек </h2>
+                        <p>Отпразнувайте същността на лятото със зрели ягоди, съчетани с ароматен босилек, освежаващо удоволствие за небцето.</p>
+                        <button>Научете повече</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="chef container">
+            <div class="chef-wrapper">
+                <picture class="chef">
+                    <source media="(max-width:600px)" srcset="public/images/desktop/chef.svg">
+                    <img class="chef-image" src="public/images/desktop/chef.svg" alt="chef">
+                </picture>
+                <div class="chef-text">
+                    <div class="heading">
+                        <h2>Chef Кристалин</h2>
+                        <picture>
+                            <source media="(max-width:600px)" srcset="public/images/desktop/sections-decoration.svg">
+                            <img src="public/images/desktop/sections-decoration.svg" alt="dessert-card-decoration">
+                        </picture>
+                    </div>
+                    <p>Шеф Кристалин Илиев е световноизвестен сладкар, известен със своите иновативни и артистични творения на десерти. С повече от две десетилетия опит, той съчетава традиционни техники с модерни вкусове, завладявайки кулинарния свят чрез своята марка Krystallino. Уникалните десерти на шеф Кристалин, като кисело мляко с орехи и мед или бекон с боровинки, отразяват неговата отдаденост на качеството и креативността, спечелвайки й международно признание и лоялни последователи.</p>
+                </div>
+            </div>
+        </section>
+        <section class="desserts container">
+            <div class="heading">
+                <h2>Десерти</h2>
+                <picture>
+                    <source media="(max-width:600px)" srcset="public/images/desktop/sections-decoration.svg">
+                    <img src="public/images/desktop/sections-decoration.svg" alt="dessert-card-decoration">
+                </picture>
+                <p>внимателно селектирани вкусове</p>
+            </div>
+            <div class="desserts-holder">
+                <div class="desserts-dessert">
+                    <picture>
+                        <source media="(max-width:600px)" srcset="public/images/desktop/strawberry-and-basil.svg">
+                        <img src="public/images/desktop/strawberry-and-basil.svg" alt="strawberry and basil dessert ">
+                    </picture>
+                    <div class="desserts-dessert-text">
+                        <h3>Ягоди и босилек</h3>
+                        <p>Възхитителен сезонен десерт с узрели ягоди, съчетани с пресен босилек, създавайки освежаваща и ароматна вкусова комбинация, която въплъщава есенцията на лятото.</p>
+                        <p class="desserts-dessert-text-ingredients"><span>Основни съставки:</span> кисело мляко, орехи, мед, захар, желатин (за консистенция), ванилов екстракт.</p>
+                    </div>
+                    <div class="desserts-dessert-nutrition">
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="desserts-dessert">
+                    <picture>
+                        <source media="(max-width:600px)" srcset="public/images/desktop/strawberry-and-basil.svg">
+                        <img src="public/images/desktop/strawberry-and-basil.svg" alt="strawberry and basil dessert ">
+                    </picture>
+                    <div class="desserts-dessert-text">
+                        <h3>Ягоди и босилек</h3>
+                        <p>Възхитителен сезонен десерт с узрели ягоди, съчетани с пресен босилек, създавайки освежаваща и ароматна вкусова комбинация, която въплъщава есенцията на лятото.</p>
+                        <p class="desserts-dessert-text-ingredients"><span>Основни съставки:</span> кисело мляко, орехи, мед, захар, желатин (за консистенция), ванилов екстракт.</p>
+                    </div>
+                    <div class="desserts-dessert-nutrition">
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="desserts-dessert">
+                    <picture>
+                        <source media="(max-width:600px)" srcset="public/images/desktop/strawberry-and-basil.svg">
+                        <img src="public/images/desktop/strawberry-and-basil.svg" alt="strawberry and basil dessert ">
+                    </picture>
+                    <div class="desserts-dessert-text">
+                        <h3>Ягоди и босилек</h3>
+                        <p>Възхитителен сезонен десерт с узрели ягоди, съчетани с пресен босилек, създавайки освежаваща и ароматна вкусова комбинация, която въплъщава есенцията на лятото.</p>
+                        <p class="desserts-dessert-text-ingredients"><span>Основни съставки:</span> кисело мляко, орехи, мед, захар, желатин (за консистенция), ванилов екстракт.</p>
+                    </div>
+                    <div class="desserts-dessert-nutrition">
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="desserts-dessert">
+                    <picture>
+                        <source media="(max-width:600px)" srcset="public/images/desktop/strawberry-and-basil.svg">
+                        <img src="public/images/desktop/strawberry-and-basil.svg" alt="strawberry and basil dessert ">
+                    </picture>
+                    <div class="desserts-dessert-text">
+                        <h3>Ягоди и босилек</h3>
+                        <p>Възхитителен сезонен десерт с узрели ягоди, съчетани с пресен босилек, създавайки освежаваща и ароматна вкусова комбинация, която въплъщава есенцията на лятото.</p>
+                        <p class="desserts-dessert-text-ingredients"><span>Основни съставки:</span> кисело мляко, орехи, мед, захар, желатин (за консистенция), ванилов екстракт.</p>
+                    </div>
+                    <div class="desserts-dessert-nutrition">
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                        <div class="desserts-dessert-nutrition-row">
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                            <div class="nutrient">
+                                <span class="nutrient-name">Калории:</span>
+                                <span class="nutrient-amount">200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desserts-additional-info">
+                <p>Ако имате интерес към нашите вкусове можете да се свържете с нас , за да уточним цени, методи на достава и условия за съхранение.</p>
+                <button class="btn btn-primary">Направи заявка</button>
+            </div>
+        </section>
+        <section class="feedbacks-section container">
+            <img class="feedbacks-section-decoration" src="public/images/shared/feedbacks-decoration.svg" alt="walnuts decoration">
+            <div class="heading">
+                <h2>Отзиви от клиенти</h2>
+                <picture>
+                    <source media="(max-width:600px)" srcset="public/images/desktop/sections-decoration.svg">
+                    <img src="public/images/desktop/sections-decoration.svg" alt="dessert-card-decoration">
+                </picture>
+            </div>
+            <div class="feedbacks-holder">
+                <div class="feedback">
+                    <span class="feedback-giver">Майкъл Томпсън – ⭐⭐⭐⭐⭐</span>
+                    <p class="feedback-text">„Имах удоволствието да опитам десерта с ягоди и босилек и той надмина всички очаквания. Свежестта на ягодите, съчетана с фината нотка на босилек, беше истинско откровение. Нямам търпение да поръчайте отново!"</p>
+                </div>
+                <div class="feedback">
+                    <span class="feedback-giver">Емили Чен - ⭐⭐⭐⭐⭐</span>
+                    <p class="feedback-text">"Десертът с хрупкави слънчогледови семки на Krystallino беше възхитителна изненада! Хрупкавостта на слънчогледовите семки, комбинирана с кремообразната основа, беше перфектна хармония от вкусове и текстури. Наистина трябва да опитате!"
+                    </p>
+                </div>
+                <div class="feedback">
+                    <span class="feedback-giver">Майкъл Томпсън – ⭐⭐⭐⭐⭐</span>
+                    <p class="feedback-text">„Имах удоволствието да опитам десерта с ягоди и босилек и той надмина всички очаквания. Свежестта на ягодите, съчетана с фината нотка на босилек, беше истинско откровение. Нямам търпение да поръчайте отново!"</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact-us-section">
+            <div class="container">
+                <div class="heading">
+                    <h2>Запитвания и заявки</h2>
+                    <picture>
+                        <source media="(max-width:600px)" srcset="public/images/desktop/sections-decoration.svg">
+                        <img src="public/images/desktop/sections-decoration.svg" alt="dessert-card-decoration">
+                    </picture>
+                    <p>За да направите поръчка или запитване за нашите десерти, моля свържете се с нас на: </p>
+                </div>
+                <div class="contact-us-wrapper">
+                    <div class="contact-us-main-info">
+                        <div class="contact-us-main-info-box">
+                            <span class="label">Имейл</span>
+                            <span class="info">info@krystallino.com </span>
+                        </div>
+                        <div class="contact-us-main-info-box">
+                            <span class="label">Адрес: </span>
+                            <span class="info">123 Вкусната улица, Девин, България</span>
+                        </div>
+                        <div class="contact-us-main-info-box">
+                            <span class="label">Телефон:</span>
+                            <span class="info">+359 (899) 456-7890</span>
+                        </div>
+                    </div>
+                    <div class="contact-us-form">
+                        <img class="contact-us-decoration" src="public/images/shared/contact-us-decoration.svg" alt="leaf">
+                        <label for="text">Вашите имена</label>
+                        <input type="text" placeholder="Placeholder">
+                        <label for="text">Телефон за връзка</label>
+                        <input type="text" placeholder="Placeholder">
+                        <label for="text">Имейл за контакти</label>
+                        <input type="email" placeholder="Placeholder">
+                        <label for="text">Вашият въпрос или заявка</label>
+                        <textarea rows="3" placeholder="Placeholder"></textarea>
+                        <button class="btn btn-primary">Направи заявка</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="media-section">
+            <img class="media-decoration-big" src="public/images/desktop/media-decoration-big.svg" alt="basil-big">
+            <img class="media-decoration-small" src="public/images/desktop/media-decoration-small.svg" alt="basil-small">
+            <div class="container">
+                <div class="media-wrapper">
+                    <div class="heading">
+                        <h2>В медиите</h2>
+                        <picture>
+                            <source media="(max-width:600px)" srcset="public/images/desktop/sections-decoration.svg">
+                            <img src="public/images/desktop/sections-decoration.svg" alt="dessert-card-decoration">
+                        </picture>
+                    </div>
+                    <div class="articles">
+                        <div class="article">
+                            <span class="article-additional-info">В медиите:</span>
+                            <h3>Krystallino: Предефиниране на иновациите в десерта</h3>
+                            <span class="article-source">Източник: сп. Кулинарни изкушения</span>
+                            <p>Krystallino, ръководен от известния сладкар Кристалин Илчев, революционизира десертната сцена с иновативните си творения. От кремообразното кисело мляко, орехи и меден десерт до неочакваното съчетание на бекон и боровинки, всяко лакомство е щателно изработено, за да измами вкусовите пъпки и да разшири границите на вкуса. С фокус върху качествените съставки и вниманието към детайла, Krystallino продължава да завладява публиката и да предефинира иновациите в десертите.</p>
+                            <button class="btn btn-primary">Прочети статията</button>
+                        </div>
+                        <div class="article">
+                            <span class="article-additional-info">В медиите:</span>
+                            <h3>Krystallino: Предефиниране на иновациите в десерта</h3>
+                            <span class="article-source">Източник: сп. Кулинарни изкушения</span>
+                            <p>Krystallino, ръководен от известния сладкар Кристалин Илчев, революционизира десертната сцена с иновативните си творения. От кремообразното кисело мляко, орехи и меден десерт до неочакваното съчетание на бекон и боровинки, всяко лакомство е щателно изработено, за да измами вкусовите пъпки и да разшири границите на вкуса. С фокус върху качествените съставки и вниманието към детайла, Krystallino продължава да завладява публиката и да предефинира иновациите в десертите.</p>
+                            <button class="btn btn-primary">Прочети статията</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container">
+            <img class="footer-decoration" src="public/images/shared/footer-decoration.svg" alt="deoration">
+            <div class="footer-wrapper">
+                <img class="footer-image" src="public/images/shared/footer-image.svg" alt="walnuts">
+                <img class="footer-logo" src="public/images/desktop/logo.svg" alt="logo">
+                <div class="footer-info">
+                    <span>info@krystallino.com </span>
+                    <span>+359 (899) 456-7890 </span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Нашите десерти</a>
+                    <a href="#">Отзиви</a>
+                    <a href="#">За поръчки и запитвания</a>
+                    <a href="#">Препоръки</a>
+                    <a href="#">Медиите за нас</a>
+                    <a href="#">Контакти</a>
+                </div>
+                <div class="footer-copyrights">
+                    <a href="#">Правила и условия |</a>
+                    <a href="#">Политика за поверителност |</a>
+                    <a href="#">Copyright © 2024 Krystallino. Всички права запазени.</a>
+                </div>
+            </div>
+        </footer>
         <script type="module" src="/src/js/main.js"></script>
     </body>
 </html>

@@ -1,0 +1,16 @@
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 32px;
+}
+
+.btn-primary {
+    background: var(--btn-primary-bg);
+    color: var(--btn-primary-label);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--btn-secondary-label);
+    border: 1px solid var(--btn-secondary-border);
+}

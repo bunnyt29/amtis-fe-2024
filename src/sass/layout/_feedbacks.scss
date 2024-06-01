@@ -1,0 +1,50 @@
+.feedbacks-section {
+    position: relative;
+    margin-top: 120px;
+    display: flex;
+    gap: 222px;
+
+    &-decoration {
+        position: absolute;
+        left: 370px;
+    }
+
+    .heading {
+        gap: 48px;
+
+        h2 {
+            width: 10ch;
+        }
+    }
+
+    .feedbacks-holder {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .feedback {
+            .feedback-giver {
+                font-weight: var(--bold);
+            }
+
+            p {
+                margin-top: 24px;
+                font-size: var(--text-md);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .feedbacks-section {
+        flex-direction: column;
+        gap: 20px;
+    
+        &-decoration {
+            position: absolute;
+            top: 40px;
+            left: 200px;
+        }
+    }
+}

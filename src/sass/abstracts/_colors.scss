@@ -1,0 +1,26 @@
+:root {
+    /* main colors */
+    --color-primary: #FBF4DF;
+    --color-secondary: #F9EECD;
+    --color-secondary-darker: #F9E8DC;
+    --color-background: #FDF8EC;
+    --color-accent:#9B582E;
+    --color-accent-darker: #533019;
+    --white: #FFFFFF;
+
+    /* feedback */
+    --color-success: #88c459;
+    --color-error: #f5414f;
+    --color-warning: #ffd137;
+
+    /* typography */
+    --color-text: #3D3D3D;
+    --color-text-headings: #222222;
+
+    /* buttons */
+    --btn-primary-bg: var(--color-accent);
+    --btn-primary-label: var(--white);
+
+    --btn-secondary-label: var(--color-accent);
+    --btn-secondary-border: var(--color-accent);
+}
