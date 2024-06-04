@@ -9,8 +9,19 @@
     color: var(--btn-primary-label);
 }
 
+.btn-primary:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
 .btn-secondary {
     background-color: transparent;
     color: var(--btn-secondary-label);
     border: 1px solid var(--btn-secondary-border);
+    transition: 0.4s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-accent-darker);
+    color: var(--btn-primary-label);
 }

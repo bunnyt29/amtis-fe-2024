@@ -39,8 +39,28 @@
         gap: 32px;
 
         a {
+            position: relative;
             color: var(--color-accent);
             font-weight: var(--semi-bold);
+            cursor: pointer;
+        }
+
+        a:after {    
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            display: block;
+            content: "";
+            background: none repeat scroll 0 0 transparent;
+            background: var(--color-accent);
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        }
+
+        a:hover:after { 
+            width: 100%; 
+            left: 0; 
         }
     }
 }

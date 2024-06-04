@@ -5,6 +5,7 @@ footer {
     .footer-decoration {
         position: absolute;
         top: -300px;
+        z-index: -100;
     }
 
     .footer-wrapper {
@@ -39,8 +40,27 @@ footer {
             gap: 32px;
 
             a {
+                position: relative;
                 font-size: var(--text-md);
                 font-weight: var(--semi-bold);
+            }
+
+            a:after {    
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                width: 0;
+                height: 2px;
+                display: block;
+                content: "";
+                background: none repeat scroll 0 0 transparent;
+                background: var(--color-text);
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            }
+    
+            a:hover:after { 
+                width: 100%; 
+                left: 0; 
             }
         }
 
@@ -97,6 +117,7 @@ footer {
         .footer-decoration {
             position: absolute;
             bottom: -50px;
+            z-index: -100;
         }
     
         .footer-wrapper {
