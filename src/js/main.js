@@ -6,32 +6,36 @@ hamburger.addEventListener('click', function(){
     hamburger.classList.toggle("open");
 });
 
-var dessertNames = document.querySelectorAll('.dessert-cards-card-name');
-var dessertShortDescriptions = document.querySelectorAll('.dessert-cards-card-description-short');
-var dessertLongDescriptions = document.querySelectorAll('.dessert-cards-card-description-long');
-var dessertIngrediants = document.querySelectorAll('.desserts-dessert-text-ingredients');
-var dessertImages = document.querySelectorAll('.dessert-cards-card-image');
-
 async function fetchData() {
     const response = await fetch("http://localhost:4000/desserts");
-    const desserts = await response.json();
+    const responseJSON = await response.json();
+    return responseJSON;
+}
 
-    // for (let index = 0; index < dessertNames.length; index++) {
-    //     dessertNames[index].innerHTML = desserts[index].name;
-    // }
-
-    for (let index = 0; index < dessertShortDescriptions.length; index++) {
-        dessertShortDescriptions[index].innerHTML = desserts[index].description_short;
-    }
-
-    // for (let index = 0; index < dessertImages.length; index++) {
-    //     dessertImages[index].srcset = dessertImages[index].srcset + desserts[index].image;
-    //     console.log(dessertImages[index].srcset)
-    // }
-
-    for (let index = 0; index < dessertShortDescriptions.length; index++) {
-        dessertIngrediants[index].innerHTML = desserts[index].ingredients_text;
+async function GenerateHTML() {
+    const data = await fetchData();
+    console.log(data)
+    const dessertCardsSection = document.querySelector("#dessert-cards-js");
+    for (let i = 0; i < data.length; i++) {
+        dessertCardsSection.innerHTML += 
+        `
+        <div class="dessert-cards-card">
+                    <picture class="dessert-cards-card-image-picture">
+                        <source class="dessert-cards-card-image" media="(max-width:600px)" srcset="public/images/desktop/${data[i].image}">
+                        <img src="public/images/desktop/${data[i].image}" alt="strawberry and basil">
+                    </picture>
+                    <div class="dessert-cards-card-text">
+                        <picture>
+                            <source media="(max-width:600px)" srcset="public/images/desktop/sections-decoration.svg">
+                            <img src="public/images/desktop/sections-decoration.svg" alt="dessert-card-decoration">
+                        </picture>
+                        <h2 class="dessert-cards-card-name">${data[i].name}</h2>
+                        <p class="dessert-cards-card-description-short">${data[i].description_short}</p>
+                        <button>Научете повече</button>
+                    </div>
+                </div>
+        `
     }
 }
 
-fetchData();
+GenerateHTML();
